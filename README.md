@@ -2,50 +2,84 @@
 {
   "depends_on": [],
   "author": "Stephan Bökelmann",
-  "first_used": "2025-03-17",
-  "keywords": ["learning", "exercises", "education", "practice"]
+  "first_used": "2025-04-01",
+  "keywords": ["shell", "expressions", "terminal", "basics"]
 }
 --->
 
-# Learning Through Exercises
+# Basic Operations from the Terminal
 
 ## 1) Introduction
-Learning by doing is one of the most effective methods to acquire new knowledge and skills. Rather than passively consuming information, actively engaging in problem-solving fosters deeper understanding and long-term retention. By working through structured exercises, students can grasp complex concepts in a more intuitive and applicable way. This approach is particularly beneficial in technical fields like programming, mathematics, and engineering.
 
-### 1.1) Further Readings and Other Sources
-- [The Importance of Practice in Learning](https://www.sciencedirect.com/science/article/pii/S036013151300062X)
-- "The Art of Learning" by Josh Waitzkin
-- [How to Learn Effectively: 5 Key Strategies](https://www.edutopia.org/article/5-research-backed-learning-strategies)
+The usage of interactive command-line interpreters began in the 1960s. Early users could interface with a computer via teletype terminals like the Teletype Model 33, sending characters as bitstreams to an input buffer through a deserializer circuit. The computer processed this data and returned results to an output buffer, which were then transmitted back through a serializer.
+
+Today, we use **terminal emulators** instead of physical teletypes, but the underlying principle remains the same. The terminal emulator allows users to interact with the shell program, which passes commands to the operating system and returns results.
+
+In this challenge, you’ll learn to use the terminal emulator to:
+
+- Evaluate basic arithmetic expressions
+- Use logical operators
+- Experiment with parentheses and grouping
+- Apply expressions to strings
 
 ## 2) Tasks
-1. **Write a Summary**: Summarize the concept of "learning by doing" in 3-5 sentences.
-2. **Example Identification**: List three examples from your own experience where learning through exercises helped you understand a topic better.
-3. **Create an Exercise**: Design a simple exercise for a topic of your choice that someone else could use to practice.
-4. **Follow an Exercise**: Find an online tutorial that includes exercises and complete at least two of them.
-5. **Modify an Existing Exercise**: Take a basic problem from a textbook or online course and modify it to make it slightly more challenging.
-6. **Pair Learning**: Explain a concept to a partner and guide them through an exercise without giving direct answers.
-7. **Review Mistakes**: Look at an exercise you've previously completed incorrectly. Identify why the mistake happened and how to prevent it in the future.
-8. **Time Challenge**: Set a timer for 10 minutes and try to solve as many simple exercises as possible on a given topic.
-9. **Self-Assessment**: Create a checklist to evaluate your own performance in completing exercises effectively.
-10. **Reflect on Progress**: Write a short paragraph on how this structured approach to exercises has influenced your learning.
 
-<details>
-  <summary>Tip for Task 5</summary>
-  Try making small adjustments first, such as increasing the difficulty slightly or adding an extra constraint.
-</details>
+1. **Evaluating Arithmetic Expressions**
+
+    Open your terminal emulator and type the following commands:
+
+    ```bash
+    expr 1 + 2
+    expr 3 - 2
+    expr 3 \* 2
+    expr 1 / 2
+    expr 2 / 1
+    expr 2 \* 2
+    expr 3 \* 2
+    ```
+
+2. **Evaluating Logical Expressions**
+
+    Try logical comparisons:
+
+    ```bash
+    expr 3 = 3
+    expr 3 != 3
+    expr 2 \> 3
+    expr 3 \< 6
+    expr 3 \>= 3
+    expr 3 \<= 3
+    ```
+
+3. **Using Parentheses for Grouping**
+
+    Use parentheses to group operations:
+
+    ```bash
+    expr \( 3 + 2 \) \* 2
+    expr \( 3 + 2 \) \* 2 = 10
+    ```
+
+4. **String Comparisons**
+
+    Evaluate expressions on strings:
+
+    ```bash
+    expr "hello" = "hello"
+    expr "hello" != "hello"
+    ```
 
 ## 3) Questions
-1. What are the main benefits of learning through exercises compared to passive learning?
-2. How do exercises improve long-term retention?
-3. Can you think of a subject where learning through exercises might be less effective? Why?
-4. What role does feedback play in learning through exercises?
-5. How can self-designed exercises improve understanding?
-6. Why is it beneficial to review past mistakes in exercises?
-7. How does explaining a concept to someone else reinforce your own understanding?
-8. What strategies can you use to stay motivated when practicing with exercises?
-9. How can timed challenges contribute to learning efficiency?
-10. How do exercises help bridge the gap between theory and practical application?
+
+- What happens if you omit spaces in your expression?
+- What happens when division would result in a decimal?
+- Which comparisons return 0 and which return 1?
+- Why do some comparisons require escaping characters like `>` or `<`?
+- How do parentheses change the result?
+- What happens if parentheses aren’t escaped correctly?
+- What kind of string comparisons are useful in scripts?
+- Which other operations could you imagine performing on strings?
 
 ## 4) Advice
-Practice consistently and seek out diverse exercises that challenge different aspects of a topic. Combine exercises with reflection and feedback to maximize your learning efficiency. Don't hesitate to adapt exercises to fit your own needs and ensure that you're actively engaging with the material, rather than just going through the motions.
 
+Even though you'll later use more powerful tools for working with data, it's critical to understand these foundational concepts. Repeat the tasks with varied arguments, predict the outcomes, and experiment with invalid inputs to learn how errors are handled.
