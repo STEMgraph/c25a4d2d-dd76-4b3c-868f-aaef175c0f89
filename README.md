@@ -1,6 +1,7 @@
 <!---
 {
   "id": "c25a4d2d-dd76-4b3c-868f-aaef175c0f89",
+  "teaches": "Basic Operations from the Terminal",
   "depends_on": [],
   "author": "Stephan Bökelmann",
   "first_used": "2025-04-01",
