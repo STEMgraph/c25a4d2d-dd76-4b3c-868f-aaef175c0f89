@@ -13,6 +13,17 @@
 
 ## 1) Introduction
 
+This exercise is your entry-point to the world of command-line-based execution on Linux-Systems. 
+Hopefully, someone already installed a Linux-Distribution for you, if not, make sure to get yourself an old computer, a random laptop, or a Raspberry Pi with a Keyboard and a Screen! 
+You don't need any additional software installed, but a basic Linux-Distribution.
+If you don't know, where to start, join the [Full-Stack-Engineering Discord Community](https://discord.gg/rdwVGj4mzD) and go to the **#absolute-beginners**-Channel. There you'll find a lot of ressources and people to help you out!
+
+### Why Command-Line Proficiency is Crucial for Engineering Beginners
+
+Mastering command-line interfaces is essential for aspiring engineers because it builds a deep understanding of how computers operate at a fundamental level. Unlike graphical user interfaces (GUIs), which abstract away complexities, the command line demands precise instructions, fostering problem-solving skills, debugging abilities, and efficiency in automation. In engineering fields like software development, data science, and systems administration, many tools (e.g., version control with Git, package managers like npm or apt, and scripting languages) rely heavily on terminal commands. Early exposure prevents reliance on point-and-click methods, enabling beginners to troubleshoot issues, write scripts for repetitive tasks, and integrate seamlessly into professional workflows where GUIs may not suffice. Moreover, it promotes resourcefulness in constrained environments, such as remote servers or embedded systems, and lays the groundwork for advanced concepts like DevOps and cloud computing. Neglecting this foundation can lead to inefficiencies and limitations in a career where adaptability and low-level control are paramount.
+
+Beyond software engineering, command-line proficiency is invaluable for engineers across all disciplines. Whether you're designing circuit diagrams, running SPICE simulations, working with CAD/CAM tools, scripting in cadquery, or analyzing data in R, a solid grasp of prompt-reply mechanics—the interactive cycle of issuing commands and receiving outputs—forms the bedrock of efficient tool usage. Start learning these basics today to unlock deeper control over your workflows and avoid the pitfalls of GUI limitations in complex engineering tasks.
+
 The usage of interactive command-line interpreters began in the 1960s. Early users could interface with a computer via teletype terminals like the Teletype Model 33, sending characters as bitstreams to an input buffer through a deserializer circuit. The computer processed this data and returned results to an output buffer, which were then transmitted back through a serializer.
 
 Today, we use **terminal emulators** instead of physical teletypes, but the underlying principle remains the same. The terminal emulator allows users to interact with the shell program, which passes commands to the operating system and returns results.
